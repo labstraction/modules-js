@@ -1,12 +1,12 @@
 export class BookService {
     
+    static url = "https://gutendex.com/books/"
+
     constructor() {}
 
     getBooks() {
 
-        const url = "https://gutendex.com/books/"
-
-        return fetch(url)
+        return fetch(BookService.url)
         .then(resp => resp.json())
         .then(result => result);
 
