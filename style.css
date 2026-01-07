@@ -1,0 +1,28 @@
+@import url(./node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import url(./node_modules/bootstrap/dist/css/bootstrap-grid.min.css);
+
+*{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.img-cover{
+    height: 400px;
+}
