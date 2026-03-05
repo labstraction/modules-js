@@ -1,12 +1,13 @@
+import { environment } from "./environment/environment.dev.js";
+// import { environment } from "./environment/environment.js";
+
 export class BookService {
-    
-    static url = "https://gutendex.com/books/"
 
     constructor() {}
 
     getBooks() {
-
-        return fetch(BookService.url)
+        console.log("Getting books from " + environment.apiUrl);
+        return fetch(environment.apiUrl)
         .then(resp => resp.json())
         .then(result => result);
 
